@@ -229,15 +229,15 @@ def handle_message(message):
     elif callb == 'correct':
         if tr == 1:
             bot.send_message(-1002637625997, f'Пользователь с id {message.chat.id}, ник {nik} начал игру верный ответ')
-        lib_for_tele.corrrect_a.correct(message)
+        asd.lib_for_tele.corrrect_a.correct(message)
     elif callb == 'mm':
         if tr == 1:
             bot.send_message(-1002637625997, f'Пользователь с id {message.chat.id}, ник {nik} начал игру больше-меньше')
-        lib_for_tele.usanwser.us_anws(message)
+        asd.lib_for_tele.usanwser.us_anws(message)
     elif callb == "words_g":
         if tr == 1:
             bot.send_message(-1002637625997, f'Пользователь с id {message.chat.id}, ник {nik} начал игру слова')
-        lib_for_tele.words.word(message)
+        asd.lib_for_tele.words.word(message)
     elif callb == 'temp':
         city = message.text.lower().capitalize()
         res = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api}&units=metric')
